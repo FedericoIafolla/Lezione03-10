@@ -11,7 +11,6 @@ import com.example.exercises.Esercizio7;
 public class Application {
 
     public static void main(String[] args) {
-        // Esegui gli esercizi
         Esercizio1.esegui();
         Esercizio2.esegui();
         Esercizio3.esegui();

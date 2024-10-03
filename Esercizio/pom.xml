@@ -16,14 +16,12 @@
     </properties>
 
     <dependencies>
-        <!-- Dipendenza per JUnit (per i test) -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
-        <!-- Dipendenza per Apache Commons IO -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -33,7 +31,6 @@
 
     <build>
         <plugins>
-            <!-- Plugin Maven per la compilazione Java -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -43,7 +40,6 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-            <!-- Plugin Maven per i test -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
