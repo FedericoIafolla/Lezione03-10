@@ -9,19 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Esercizio7 {
-    public static void esegui() {
-        String filePath = "prodotti.txt"; // Percorso del file
-        try {
-            List<Product> prodotti = leggiProdottiDaDisco(filePath);
-            System.out.println("Prodotti letti da disco:");
-            for (Product prodotto : prodotti) {
-                System.out.println(prodotto.getName() + "@" + prodotto.getCategory() + "@" + prodotto.getPrice());
-            }
-        } catch (IOException e) {
-            System.err.println("Errore nella lettura del file: " + e.getMessage());
-        }
-    }
-
     public static List<Product> leggiProdottiDaDisco(String filePath) throws IOException {
         List<Product> prodotti = new ArrayList<>();
         List<String> lines = FileUtils.readLines(new File(filePath), "UTF-8");

@@ -1,4 +1,4 @@
-package com.example.federicoiafolla;
+package federicoiafolla;
 
 import com.example.exercises.Esercizio1;
 import com.example.exercises.Esercizio2;
