@@ -8,19 +8,16 @@ public class Order {
     private Customer customer;
     private List<Product> products;
 
-    // Costruttore
     public Order(int orderId, Customer customer) {
         this.orderId = orderId;
         this.customer = customer;
         this.products = new ArrayList<>();
     }
 
-    // Aggiungi un prodotto all'ordine
     public void addProduct(Product product) {
         products.add(product);
     }
 
-    // Getters
     public int getOrderId() {
         return orderId;
     }

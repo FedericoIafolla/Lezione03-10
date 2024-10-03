@@ -1,18 +1,13 @@
 package com.example.exercises;
 
-import com.example.model.Customer;
-import com.example.model.Order;
-
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
 public class Esercizio2 {
-    public static Map<Customer, Double> totaleVenditePerCliente(List<Order> ordini) {
-        return ordini.stream()
-                .collect(Collectors.groupingBy(
-                        Order::getCustomer,
-                        Collectors.summingDouble(Order::getTotalAmount)
-                ));
+    public static void esegui() {
+        System.out.println("Esecuzione Esercizio 2");
+        int fattoriale = 1;
+        int numero = 5; // Cambia questo numero per testare altri valori
+        for (int i = 1; i <= numero; i++) {
+            fattoriale *= i;
+        }
+        System.out.println("Il fattoriale di " + numero + " è: " + fattoriale);
     }
 }

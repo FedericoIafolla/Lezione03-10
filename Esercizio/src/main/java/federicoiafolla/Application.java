@@ -12,12 +12,12 @@ public class Application {
 
     public static void main(String[] args) {
         // Esegui gli esercizi
-        Esercizio1.esegui(); // Esecuzione esercizio 1
-        Esercizio2.esegui(); // Esecuzione esercizio 2
-        Esercizio3.esegui(); // Esecuzione esercizio 3
-        Esercizio4.esegui(); // Esecuzione esercizio 4
-        Esercizio5.esegui(); // Esecuzione esercizio 5
-        Esercizio6.esegui(); // Esecuzione esercizio 6
-        Esercizio7.esegui(); // Esecuzione esercizio 7
+        Esercizio1.esegui();
+        Esercizio2.esegui();
+        Esercizio3.esegui();
+        Esercizio4.esegui();
+        Esercizio5.esegui();
+        Esercizio6.esegui();
+        Esercizio7.esegui();
     }
 }

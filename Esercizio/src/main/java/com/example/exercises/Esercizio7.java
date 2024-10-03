@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Esercizio7 {
     public static void esegui() {
-        String filePath = "prodotti.txt"; // Percorso del file
+        String filePath = "prodotti.txt";
         try {
             List<Product> prodotti = leggiProdottiDaDisco(filePath);
             System.out.println("Prodotti letti da disco:");

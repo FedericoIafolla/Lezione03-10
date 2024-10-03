@@ -5,14 +5,12 @@ public class Product {
     private String category;
     private double price;
 
-    // Costruttore
     public Product(String name, String category, double price) {
         this.name = name;
         this.category = category;
         this.price = price;
     }
 
-    // Getters e Setters
     public String getName() {
         return name;
     }
