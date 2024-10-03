@@ -1,0 +1,2 @@
+nomeprodotto1@categoria1@100.0
+nomeprodotto2@categoria2@200.0

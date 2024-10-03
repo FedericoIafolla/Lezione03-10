@@ -1,0 +1,93 @@
+package federicoiafolla;
+
+import org.apache.commons.io.FileUtils;
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Application {
+
+    public static void main(String[] args) {
+        // Esegui gli esercizi
+        esercizio1(); // Esecuzione esercizio 1
+        esercizio2(); // Esecuzione esercizio 2
+        esercizio3(); // Esecuzione esercizio 3
+        esercizio4(); // Esecuzione esercizio 4
+        esercizio5(); // Esecuzione esercizio 5
+        esercizio6(); // Esecuzione esercizio 6
+        esercizio7(); // Esecuzione esercizio 7
+    }
+
+    public static void esercizio1() {
+        System.out.println("Esecuzione Esercizio 1");
+        // Aggiungi qui il codice per l'esercizio 1
+        // Raggruppa gli ordini per cliente utilizzando Stream e Lambda Expressions
+    }
+
+    public static void esercizio2() {
+        System.out.println("Esecuzione Esercizio 2");
+        // Aggiungi qui il codice per l'esercizio 2
+        // Calcola il totale delle vendite per ogni cliente utilizzando Stream e Lambda Expressions
+    }
+
+    public static void esercizio3() {
+        System.out.println("Esecuzione Esercizio 3");
+        // Aggiungi qui il codice per l'esercizio 3
+        // Trova i prodotti più costosi utilizzando Stream e Lambda Expressions
+    }
+
+    public static void esercizio4() {
+        System.out.println("Esecuzione Esercizio 4");
+        // Aggiungi qui il codice per l'esercizio 4
+        // Calcola la media degli importi degli ordini utilizzando Stream e Lambda Expressions
+    }
+
+    public static void esercizio5() {
+        System.out.println("Esecuzione Esercizio 5");
+        // Aggiungi qui il codice per l'esercizio 5
+        // Raggruppa i prodotti per categoria e calcola la somma degli importi per ogni categoria
+    }
+
+    public static void esercizio6() {
+        System.out.println("Esecuzione Esercizio 6");
+        // Aggiungi qui il codice per l'esercizio 6
+        // Salva i prodotti su disco utilizzando Apache Commons IO FileUtils
+        List<String> prodotti = new ArrayList<>();
+        prodotti.add("nomeprodotto1@categoria1@100.0");
+        prodotti.add("nomeprodotto2@categoria2@200.0");
+
+        salvaProdottiSuDisco(prodotti);
+    }
+
+    public static void esercizio7() {
+        System.out.println("Esecuzione Esercizio 7");
+        // Aggiungi qui il codice per l'esercizio 7
+        // Leggi i prodotti da disco utilizzando Apache Commons IO FileUtils
+        List<String> prodotti = leggiProdottiDaDisco();
+        for (String prodotto : prodotti) {
+            System.out.println(prodotto);
+package com.example.federicoiafolla;
+
+import com.example.exercises.Esercizio1;
+import com.example.exercises.Esercizio2;
+import com.example.exercises.Esercizio3;
+import com.example.exercises.Esercizio4;
+import com.example.exercises.Esercizio5;
+import com.example.exercises.Esercizio6;
+import com.example.exercises.Esercizio7;
+
+            public class Application {
+
+                public static void main(String[] args) {
+                    // Esegui gli esercizi
+                    Esercizio1.esegui(); // Esecuzione esercizio 1
+                    Esercizio2.esegui(); // Esecuzione esercizio 2
+                    Esercizio3.esegui(); // Esecuzione esercizio 3
+                    Esercizio4.esegui(); // Esecuzione esercizio 4
+                    Esercizio5.esegui(); // Esecuzione esercizio 5
+                    Esercizio6.esegui(); // Esecuzione esercizio 6
+                    Esercizio7.esegui(); // Esecuzione esercizio 7
+                }
+            }

@@ -1,0 +1,38 @@
+package com.example.exercises;
+
+import org.apache.commons.io.FileUtils;
+import com.example.model.Product;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Esercizio7 {
+    public static void esegui() {
+        System.out.println("Esecuzione Esercizio 7");
+        List<Product> prodotti = leggiProdottiDaDisco();
+        for (Product prodotto : prodotti) {
+            System.out.println(prodotto);
+        }
+    }
+
+    private static List<Product> leggiProdottiDaDisco() {
+        File file = new File("prodotti.txt");
+        List<Product> prodotti = new ArrayList<>();
+        try {
+            List<String> lines = FileUtils.readLines(file, java.nio.charset.StandardCharsets.UTF_8);
+            for (String line : lines) {
+                String[] parts = line.split("@");
+                String name = parts[0];
+                String category = parts[1];
+                double price = Double.parseDouble(parts[2]);
+                prodotti.add(new Product(name, category, price));
+            }
+            System.out.println("Prodotti letti da disco.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return prodotti;
+    }
+}

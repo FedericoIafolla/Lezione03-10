@@ -1,0 +1,14 @@
+package com.example.exercises;
+
+import com.example.model.Order;
+
+import java.util.List;
+
+public class Esercizio4 {
+    public static double mediaImportiOrdini(List<Order> ordini) {
+        return ordini.stream()
+                .mapToDouble(Order::getTotalAmount)
+                .average()
+                .orElse(0);
+    }
+}
